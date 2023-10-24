@@ -1,0 +1,29 @@
+# Fichiers de base de données
+*.sqlite
+*.sqlite3
+*.db
+*.db3
+*.mdb
+*.ldb
+*.accdb
+*.mdf
+*.ldf
+*.frm
+*.ibd
+
+# Sauvegardes et les fichiers de récupération
+*~
+*.bak
+*.backup
+*.sqlbak
+*.sql.bak
+*.sql~  
+*.sql.save
+
+# Fichiers de configuration spécifiques à la base de données
+*.dsn
+
+# Fichiers de logs de base de données
+*.log
+*.log.*
+
