@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\Laldy_MaquihaCostes_RossignolTravelAgency.props" />
+</Project>

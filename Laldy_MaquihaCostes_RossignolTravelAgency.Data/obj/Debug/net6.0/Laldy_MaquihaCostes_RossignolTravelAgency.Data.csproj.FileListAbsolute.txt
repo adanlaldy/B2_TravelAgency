@@ -1,0 +1,12 @@
+C:\Users\fanny\C#\Laldy_MaquihaCostes_RossignolTravelAgency.Data\bin\Debug\net6.0\Laldy_MaquihaCostes_RossignolTravelAgency.Data.deps.json
+C:\Users\fanny\C#\Laldy_MaquihaCostes_RossignolTravelAgency.Data\bin\Debug\net6.0\Laldy_MaquihaCostes_RossignolTravelAgency.Data.dll
+C:\Users\fanny\C#\Laldy_MaquihaCostes_RossignolTravelAgency.Data\bin\Debug\net6.0\Laldy_MaquihaCostes_RossignolTravelAgency.Data.pdb
+C:\Users\fanny\C#\Laldy_MaquihaCostes_RossignolTravelAgency.Data\obj\Debug\net6.0\Laldy_MaquihaCostes_RossignolTravelAgency.Data.csproj.AssemblyReference.cache
+C:\Users\fanny\C#\Laldy_MaquihaCostes_RossignolTravelAgency.Data\obj\Debug\net6.0\Laldy_MaquihaCostes_RossignolTravelAgency.Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\fanny\C#\Laldy_MaquihaCostes_RossignolTravelAgency.Data\obj\Debug\net6.0\Laldy_MaquihaCostes_RossignolTravelAgency.Data.AssemblyInfoInputs.cache
+C:\Users\fanny\C#\Laldy_MaquihaCostes_RossignolTravelAgency.Data\obj\Debug\net6.0\Laldy_MaquihaCostes_RossignolTravelAgency.Data.AssemblyInfo.cs
+C:\Users\fanny\C#\Laldy_MaquihaCostes_RossignolTravelAgency.Data\obj\Debug\net6.0\Laldy_MaquihaCostes_RossignolTravelAgency.Data.csproj.CoreCompileInputs.cache
+C:\Users\fanny\C#\Laldy_MaquihaCostes_RossignolTravelAgency.Data\obj\Debug\net6.0\Laldy_MaquihaCostes_RossignolTravelAgency.Data.dll
+C:\Users\fanny\C#\Laldy_MaquihaCostes_RossignolTravelAgency.Data\obj\Debug\net6.0\refint\Laldy_MaquihaCostes_RossignolTravelAgency.Data.dll
+C:\Users\fanny\C#\Laldy_MaquihaCostes_RossignolTravelAgency.Data\obj\Debug\net6.0\Laldy_MaquihaCostes_RossignolTravelAgency.Data.pdb
+C:\Users\fanny\C#\Laldy_MaquihaCostes_RossignolTravelAgency.Data\obj\Debug\net6.0\ref\Laldy_MaquihaCostes_RossignolTravelAgency.Data.dll
