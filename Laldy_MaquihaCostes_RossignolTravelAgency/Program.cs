@@ -14,6 +14,8 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddDbContext<DataContext>();
 builder.Services.AddTransient<IDestinationRepository, DestinationRepository>();
 builder.Services.AddTransient<IDestinationService, DestinationService>();
+builder.Services.AddTransient<ICountryRepository, CountryRepository>();
+builder.Services.AddTransient<ICountryService, CountryService>();
 
 var app = builder.Build();
 

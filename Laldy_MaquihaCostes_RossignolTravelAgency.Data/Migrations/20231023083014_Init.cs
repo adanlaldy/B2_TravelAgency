@@ -32,7 +32,6 @@ namespace Laldy_MaquihaCostes_RossignolTravelAgency.Data.Migrations
                 });
         }
 
-        /// <inheritdoc />
         protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.DropTable(
