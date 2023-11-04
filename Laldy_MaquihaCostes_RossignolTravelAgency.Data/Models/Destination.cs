@@ -10,5 +10,6 @@
         public int? Rate { get; set; }
         public string Comment { get; set; }
         public int CountryId { get; set; }
+        public ICollection<Event> EventList { get; set; }
     }
 }
