@@ -9,7 +9,7 @@
         public bool IsVisited { get; set; }
         public int? Rate { get; set; }
         public string Comment { get; set; }
-        public int CountryId { get; set; }
-        public ICollection<Event> EventList { get; set; }
+        public Country Country { get; set; }
+        public ICollection<Events> EventsList { get; set; }
     }
 }

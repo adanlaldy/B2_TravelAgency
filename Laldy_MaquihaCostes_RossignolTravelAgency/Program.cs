@@ -12,10 +12,15 @@ builder.Services.AddControllers();
 builder.Services.AddSwaggerGen();
 
 builder.Services.AddDbContext<DataContext>();
+// Destination repository and service
 builder.Services.AddTransient<IDestinationRepository, DestinationRepository>();
 builder.Services.AddTransient<IDestinationService, DestinationService>();
+// Country repository and service
 builder.Services.AddTransient<ICountryRepository, CountryRepository>();
 builder.Services.AddTransient<ICountryService, CountryService>();
+// Events repository and service
+builder.Services.AddTransient<IEventsRepository, EventsRepository>();
+builder.Services.AddTransient<IEventsService, EventsService>();
 
 var app = builder.Build();
 

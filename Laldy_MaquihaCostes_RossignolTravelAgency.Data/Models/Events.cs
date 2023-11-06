@@ -1,6 +1,6 @@
 ﻿namespace Laldy_MaquihaCostes_RossignolTravelAgency.Data.Models
 {
-    public class Event
+    public class Events
     {
         public int Id { get; set; }
         public string Title { get; set; }

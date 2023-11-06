@@ -23,7 +23,8 @@ namespace Laldy_MaquihaCostes_RossignolTravelAgency.Business.Service
                 IsVisited = destination.IsVisited,
                 Rate = destination.Rate != null ? destination.Rate : null,
                 Comment = destination.Comment,
-                CountryId = destination.CountryId,
+                Country = destination.Country,
+                EventsList = destination.EventsList,
             };
 
             return destinationDto;
@@ -40,7 +41,8 @@ namespace Laldy_MaquihaCostes_RossignolTravelAgency.Business.Service
                 IsVisited = dto.IsVisited,
                 Rate = dto.Rate != null ? dto.Rate : null,
                 Comment = dto.Comment,
-                CountryId = dto.CountryId
+                Country = dto.Country,
+                EventsList = dto.EventsList
             };
 
             return destination;
