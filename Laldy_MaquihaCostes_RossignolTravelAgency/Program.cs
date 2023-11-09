@@ -21,6 +21,12 @@ builder.Services.AddTransient<ICountryService, CountryService>();
 // Events repository and service
 builder.Services.AddTransient<IEventsRepository, EventsRepository>();
 builder.Services.AddTransient<IEventsService, EventsService>();
+// Travel repository and service
+builder.Services.AddTransient<ITravelRepository, TravelRepository>();
+builder.Services.AddTransient<ITravelService, TravelService>();
+// Traveler repository and service
+builder.Services.AddTransient<ITravelerRepository, TravelerRepository>();
+builder.Services.AddTransient<ITravelerService, TravelerService>();
 
 var app = builder.Build();
 
