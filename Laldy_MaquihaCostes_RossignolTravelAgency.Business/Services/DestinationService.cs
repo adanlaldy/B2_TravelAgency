@@ -77,6 +77,19 @@ namespace Laldy_MaquihaCostes_RossignolTravelAgency.Business.Service
             return destinationDto;
         }
 
+        private List<DestinationDto> ListModelToDto(ICollection<Destination> destinations)
+        {
+            List<DestinationDto> destinationDtos = destinations.Select(x => ModelToDto(x)).ToList();
+            return destinationDtos;
+
+        }
+        public List<DestinationDto> GetAll()
+        {
+            List<Destination> destinations = repository.GetAll();
+            List<DestinationDto> destinationDtos = ListModelToDto(destinations);
+            return destinationDtos;
+        }
+
         public async Task<int> Delete(int id)
         {
             return await repository.Delete(id);

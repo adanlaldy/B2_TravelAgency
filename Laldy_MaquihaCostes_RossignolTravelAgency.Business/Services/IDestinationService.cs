@@ -7,6 +7,7 @@ namespace Laldy_MaquihaCostes_RossignolTravelAgency.Business.Service
         Task<DestinationDto> Add(DestinationDto destinationDto);
         Task<int> Delete(int id);
         Task<DestinationDto> Get(int id);
+        List<DestinationDto> GetAll();
         Task<DestinationDto> Update(DestinationDto destinationDto);
     }
 }
