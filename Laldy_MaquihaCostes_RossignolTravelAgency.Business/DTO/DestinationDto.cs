@@ -14,7 +14,7 @@ namespace Laldy_MaquihaCostes_RossignolTravelAgency.Business.DTO
         public string Comment { get; set; }
         public Country Country { get; set; }
         public ICollection<Events> EventsList { get; set; }
-        //public ICollection<Travel> TravelList { get; set; }
+        public ICollection<Travel> TravelList { get; set; }
 
     }
 }

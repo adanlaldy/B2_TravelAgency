@@ -13,6 +13,6 @@ namespace Laldy_MaquihaCostes_RossignolTravelAgency.Data.Models
         public string Comment { get; set; }
         public Country Country { get; set; }
         public ICollection<Events> EventsList { get; set; }
-        //public ICollection<Travel> TravelList { get; set; }
+        public ICollection<Travel> TravelList { get; set; }
     }
 }
