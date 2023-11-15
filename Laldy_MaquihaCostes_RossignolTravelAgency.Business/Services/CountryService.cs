@@ -18,7 +18,6 @@ namespace Laldy_MaquihaCostes_RossignolTravelAgency.Business.Service
             {
                 Id = country.Id,
                 Name = country.Name,
-                DestinationList = country.DestinationList,
             };
 
             return countryDto;
@@ -29,8 +28,7 @@ namespace Laldy_MaquihaCostes_RossignolTravelAgency.Business.Service
             Country country = new Country
             {
                 Id = dto.Id,
-                Name= dto.Name,
-                DestinationList = dto.DestinationList,
+                Name = dto.Name,
             };
 
             return country;

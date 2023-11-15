@@ -1,4 +1,6 @@
-﻿namespace Laldy_MaquihaCostes_RossignolTravelAgency.Data.Models
+﻿using System.Text.Json.Serialization;
+
+namespace Laldy_MaquihaCostes_RossignolTravelAgency.Data.Models
 {
     public class Destination
     {
@@ -11,5 +13,6 @@
         public string Comment { get; set; }
         public Country Country { get; set; }
         public ICollection<Events> EventsList { get; set; }
+        //public ICollection<Travel> TravelList { get; set; }
     }
 }

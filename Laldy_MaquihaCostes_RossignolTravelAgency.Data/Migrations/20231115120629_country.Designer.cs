@@ -11,8 +11,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Laldy_MaquihaCostes_RossignolTravelAgency.Data.Migrations
 {
     [DbContext(typeof(DataContext))]
-    [Migration("20231106095128_init")]
-    partial class init
+    [Migration("20231115120629_country")]
+    partial class country
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -72,37 +72,6 @@ namespace Laldy_MaquihaCostes_RossignolTravelAgency.Data.Migrations
                     b.ToTable("Destinations");
                 });
 
-            modelBuilder.Entity("Laldy_MaquihaCostes_RossignolTravelAgency.Data.Models.Events", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("INTEGER");
-
-                    b.Property<DateTime>("Date")
-                        .HasColumnType("TEXT");
-
-                    b.Property<string>("Description")
-                        .IsRequired()
-                        .HasColumnType("TEXT");
-
-                    b.Property<string>("Destination")
-                        .IsRequired()
-                        .HasColumnType("TEXT");
-
-                    b.Property<int?>("DestinationId")
-                        .HasColumnType("INTEGER");
-
-                    b.Property<string>("Title")
-                        .IsRequired()
-                        .HasColumnType("TEXT");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("DestinationId");
-
-                    b.ToTable("AllEvents");
-                });
-
             modelBuilder.Entity("Laldy_MaquihaCostes_RossignolTravelAgency.Data.Models.Destination", b =>
                 {
                     b.HasOne("Laldy_MaquihaCostes_RossignolTravelAgency.Data.Models.Country", "Country")
@@ -114,21 +83,9 @@ namespace Laldy_MaquihaCostes_RossignolTravelAgency.Data.Migrations
                     b.Navigation("Country");
                 });
 
-            modelBuilder.Entity("Laldy_MaquihaCostes_RossignolTravelAgency.Data.Models.Events", b =>
-                {
-                    b.HasOne("Laldy_MaquihaCostes_RossignolTravelAgency.Data.Models.Destination", null)
-                        .WithMany("EventsList")
-                        .HasForeignKey("DestinationId");
-                });
-
             modelBuilder.Entity("Laldy_MaquihaCostes_RossignolTravelAgency.Data.Models.Country", b =>
                 {
                     b.Navigation("DestinationList");
-                });
-
-            modelBuilder.Entity("Laldy_MaquihaCostes_RossignolTravelAgency.Data.Models.Destination", b =>
-                {
-                    b.Navigation("EventsList");
                 });
 #pragma warning restore 612, 618
         }

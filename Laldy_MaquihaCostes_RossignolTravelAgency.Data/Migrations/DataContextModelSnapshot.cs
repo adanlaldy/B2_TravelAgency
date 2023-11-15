@@ -62,14 +62,9 @@ namespace Laldy_MaquihaCostes_RossignolTravelAgency.Data.Migrations
                     b.Property<int?>("Rate")
                         .HasColumnType("INTEGER");
 
-                    b.Property<int?>("TravelerId")
-                        .HasColumnType("INTEGER");
-
                     b.HasKey("Id");
 
                     b.HasIndex("CountryId");
-
-                    b.HasIndex("TravelerId");
 
                     b.ToTable("Destinations");
                 });
@@ -87,11 +82,7 @@ namespace Laldy_MaquihaCostes_RossignolTravelAgency.Data.Migrations
                         .IsRequired()
                         .HasColumnType("TEXT");
 
-                    b.Property<string>("Destination")
-                        .IsRequired()
-                        .HasColumnType("TEXT");
-
-                    b.Property<int?>("DestinationId")
+                    b.Property<int>("DestinationId")
                         .HasColumnType("INTEGER");
 
                     b.Property<string>("Title")
@@ -105,114 +96,31 @@ namespace Laldy_MaquihaCostes_RossignolTravelAgency.Data.Migrations
                     b.ToTable("AllEvents");
                 });
 
-            modelBuilder.Entity("Laldy_MaquihaCostes_RossignolTravelAgency.Data.Models.Travel", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("INTEGER");
-
-                    b.Property<string>("Destination")
-                        .IsRequired()
-                        .HasColumnType("TEXT");
-
-                    b.Property<DateOnly>("EndDate")
-                        .HasColumnType("TEXT");
-
-                    b.Property<DateOnly>("StartDate")
-                        .HasColumnType("TEXT");
-
-                    b.HasKey("Id");
-
-                    b.ToTable("Travels");
-                });
-
-            modelBuilder.Entity("Laldy_MaquihaCostes_RossignolTravelAgency.Data.Models.Traveler", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("INTEGER");
-
-                    b.Property<DateOnly>("BirthDate")
-                        .HasColumnType("TEXT");
-
-                    b.Property<string>("FirstName")
-                        .IsRequired()
-                        .HasColumnType("TEXT");
-
-                    b.Property<string>("LastName")
-                        .IsRequired()
-                        .HasColumnType("TEXT");
-
-                    b.HasKey("Id");
-
-                    b.ToTable("Travelers");
-                });
-
-            modelBuilder.Entity("TravelTraveler", b =>
-                {
-                    b.Property<int>("TravelListId")
-                        .HasColumnType("INTEGER");
-
-                    b.Property<int>("TravelerId")
-                        .HasColumnType("INTEGER");
-
-                    b.HasKey("TravelListId", "TravelerId");
-
-                    b.HasIndex("TravelerId");
-
-                    b.ToTable("TravelTraveler");
-                });
-
             modelBuilder.Entity("Laldy_MaquihaCostes_RossignolTravelAgency.Data.Models.Destination", b =>
                 {
                     b.HasOne("Laldy_MaquihaCostes_RossignolTravelAgency.Data.Models.Country", "Country")
-                        .WithMany("DestinationList")
+                        .WithMany()
                         .HasForeignKey("CountryId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
-
-                    b.HasOne("Laldy_MaquihaCostes_RossignolTravelAgency.Data.Models.Traveler", null)
-                        .WithMany("DestinationList")
-                        .HasForeignKey("TravelerId");
 
                     b.Navigation("Country");
                 });
 
             modelBuilder.Entity("Laldy_MaquihaCostes_RossignolTravelAgency.Data.Models.Events", b =>
                 {
-                    b.HasOne("Laldy_MaquihaCostes_RossignolTravelAgency.Data.Models.Destination", null)
+                    b.HasOne("Laldy_MaquihaCostes_RossignolTravelAgency.Data.Models.Destination", "Destination")
                         .WithMany("EventsList")
-                        .HasForeignKey("DestinationId");
-                });
-
-            modelBuilder.Entity("TravelTraveler", b =>
-                {
-                    b.HasOne("Laldy_MaquihaCostes_RossignolTravelAgency.Data.Models.Travel", null)
-                        .WithMany()
-                        .HasForeignKey("TravelListId")
+                        .HasForeignKey("DestinationId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("Laldy_MaquihaCostes_RossignolTravelAgency.Data.Models.Traveler", null)
-                        .WithMany()
-                        .HasForeignKey("TravelerId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-                });
-
-            modelBuilder.Entity("Laldy_MaquihaCostes_RossignolTravelAgency.Data.Models.Country", b =>
-                {
-                    b.Navigation("DestinationList");
+                    b.Navigation("Destination");
                 });
 
             modelBuilder.Entity("Laldy_MaquihaCostes_RossignolTravelAgency.Data.Models.Destination", b =>
                 {
                     b.Navigation("EventsList");
-                });
-
-            modelBuilder.Entity("Laldy_MaquihaCostes_RossignolTravelAgency.Data.Models.Traveler", b =>
-                {
-                    b.Navigation("DestinationList");
                 });
 #pragma warning restore 612, 618
         }

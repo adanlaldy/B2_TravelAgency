@@ -6,6 +6,5 @@ namespace Laldy_MaquihaCostes_RossignolTravelAgency.Business.DTO
     {
         public int Id { get; set; }
         public string Name { get; set; }
-        public ICollection<Destination> DestinationList { get; set; }
     }
 }

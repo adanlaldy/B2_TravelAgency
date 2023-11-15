@@ -37,10 +37,5 @@ namespace Laldy_MaquihaCostes_RossignolTravelAgency.Data.Repositories
         {
             return await context.AllEvents.FindAsync(id);
         }
-
-        public List<Events> GetAll()
-        {
-            return context.AllEvents.ToList();
-        }
     }
 }

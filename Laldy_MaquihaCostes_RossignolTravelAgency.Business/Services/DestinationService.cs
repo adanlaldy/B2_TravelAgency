@@ -25,6 +25,7 @@ namespace Laldy_MaquihaCostes_RossignolTravelAgency.Business.Service
                 Comment = destination.Comment,
                 Country = destination.Country,
                 EventsList = destination.EventsList,
+                //TravelList = destination.TravelList,
             };
 
             return destinationDto;
@@ -42,7 +43,8 @@ namespace Laldy_MaquihaCostes_RossignolTravelAgency.Business.Service
                 Rate = dto.Rate != null ? dto.Rate : null,
                 Comment = dto.Comment,
                 Country = dto.Country,
-                EventsList = dto.EventsList
+                EventsList = dto.EventsList,
+                //TravelList = dto.TravelList,
             };
 
             return destination;

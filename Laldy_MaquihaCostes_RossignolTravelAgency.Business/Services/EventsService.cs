@@ -1,6 +1,7 @@
 ﻿using Laldy_MaquihaCostes_RossignolTravelAgency.Data.Repositories;
 using Laldy_MaquihaCostes_RossignolTravelAgency.Business.DTO;
 using Laldy_MaquihaCostes_RossignolTravelAgency.Data.Models;
+using Laldy_MaquihaCostes_RossignolTravelAgency.Data.Migrations;
 
 namespace Laldy_MaquihaCostes_RossignolTravelAgency.Business.Service
 {
@@ -20,7 +21,7 @@ namespace Laldy_MaquihaCostes_RossignolTravelAgency.Business.Service
                 Title = events.Title,
                 Date = events.Date,
                 Description = events.Description,
-                Destination = events.Destination,
+                DestinationID = events.DestinationID,
             };
 
             return eventsDto;
@@ -34,7 +35,7 @@ namespace Laldy_MaquihaCostes_RossignolTravelAgency.Business.Service
                 Title = dto.Title,
                 Date = dto.Date,
                 Description = dto.Description,
-                Destination = dto.Destination,
+                DestinationID = dto.DestinationID,
             };
 
             return events;

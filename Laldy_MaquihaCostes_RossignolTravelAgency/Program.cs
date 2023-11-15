@@ -1,6 +1,7 @@
 using Laldy_MaquihaCostes_RossignolTravelAgency.Business.Service;
 using Laldy_MaquihaCostes_RossignolTravelAgency.Data;
 using Laldy_MaquihaCostes_RossignolTravelAgency.Data.Repositories;
+using System.Text.Json.Serialization;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -15,18 +16,23 @@ builder.Services.AddDbContext<DataContext>();
 // Destination repository and service
 builder.Services.AddTransient<IDestinationRepository, DestinationRepository>();
 builder.Services.AddTransient<IDestinationService, DestinationService>();
-// Country repository and service
+//// Country repository and service
 builder.Services.AddTransient<ICountryRepository, CountryRepository>();
 builder.Services.AddTransient<ICountryService, CountryService>();
 // Events repository and service
 builder.Services.AddTransient<IEventsRepository, EventsRepository>();
 builder.Services.AddTransient<IEventsService, EventsService>();
-// Travel repository and service
-builder.Services.AddTransient<ITravelRepository, TravelRepository>();
-builder.Services.AddTransient<ITravelService, TravelService>();
-// Traveler repository and service
-builder.Services.AddTransient<ITravelerRepository, TravelerRepository>();
-builder.Services.AddTransient<ITravelerService, TravelerService>();
+//// Travel repository and service
+//builder.Services.AddTransient<ITravelRepository, TravelRepository>();
+//builder.Services.AddTransient<ITravelService, TravelService>();
+//// Traveler repository and service
+//builder.Services.AddTransient<ITravelerRepository, TravelerRepository>();
+//builder.Services.AddTransient<ITravelerService, TravelerService>();
+
+//builder.Services.AddControllers().AddJsonOptions(options =>
+//{
+//    options.JsonSerializerOptions.ReferenceHandler = ReferenceHandler.Preserve;
+//});
 
 var app = builder.Build();
 
