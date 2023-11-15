@@ -42,5 +42,9 @@ namespace Laldy_MaquihaCostes_RossignolTravelAgency.Data.Repositories
         {
             return context.Destinations.ToList();
         }
+        public List<Destination> GetAllVisited()
+        {
+            return context.Destinations.Where(x => x.IsVisited == true).ToList();
+        }
     }
 }

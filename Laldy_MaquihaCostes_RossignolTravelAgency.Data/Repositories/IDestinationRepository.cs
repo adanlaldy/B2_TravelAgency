@@ -9,5 +9,7 @@ namespace Laldy_MaquihaCostes_RossignolTravelAgency.Data.Repositories
         Task<Destination> Get(int id);
         List<Destination> GetAll();
         Task<Destination> Update(Destination destination);
+        List<Destination> GetAllVisited();
+
     }
 }
