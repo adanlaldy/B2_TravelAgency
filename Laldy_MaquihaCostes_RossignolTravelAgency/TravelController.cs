@@ -93,5 +93,17 @@ namespace Laldy_MaquihaCostes_RossignolTravelAgency
                 return this.StatusCode(500, "Internal server error");
             }
         }
+        [HttpGet("future")] //GET : api/travel/future
+        public ActionResult<List<TravelDto>> GetFutureTravel()
+        {
+            try
+            {
+                return this.service.GetFutureTravel();
+            }
+            catch (Exception e)
+            {
+                return this.StatusCode(500, "Internal Server error");
+            }
+        }
     }
 }

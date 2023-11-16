@@ -37,5 +37,10 @@ namespace Laldy_MaquihaCostes_RossignolTravelAgency.Data.Repositories
         {
             return await context.Travels.FindAsync(id);
         }
+        public List<Travel> GetFutureTravel()
+        {
+            DateTime currentDate = DateTime.Now;
+            return context.Travels.Where(x => x.StartDate > currentDate).ToList();
+        }
     }
 }
