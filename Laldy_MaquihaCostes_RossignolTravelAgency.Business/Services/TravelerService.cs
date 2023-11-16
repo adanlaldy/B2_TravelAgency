@@ -69,5 +69,19 @@ namespace Laldy_MaquihaCostes_RossignolTravelAgency.Business.Service
         {
             return await repository.Delete(id);
         }
+
+        private List<TravelerDto> ListModelToDto(ICollection<Traveler> travelers)
+        {
+            List<TravelerDto> travelerDtos = travelers.Select(x => ModelToDto(x)).ToList();
+            return travelerDtos;
+
+        }
+        public List<TravelerDto> GetMinorTraveler()
+        {
+            List<Traveler> travelers = repository.GetMinorTraveler();
+            List<TravelerDto> travelerDtos = ListModelToDto(travelers);
+            return travelerDtos;
+        }
+
     }
 }

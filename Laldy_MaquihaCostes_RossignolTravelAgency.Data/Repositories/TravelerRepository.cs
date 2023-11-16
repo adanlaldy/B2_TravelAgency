@@ -37,5 +37,10 @@ namespace Laldy_MaquihaCostes_RossignolTravelAgency.Data.Repositories
         {
             return await context.Travelers.FindAsync(id);
         }
+        public List<Traveler> GetMinorTraveler()
+        {
+            DateOnly eighteenYearsAgo = DateOnly.FromDateTime(DateTime.Now.AddYears(-18));
+            return context.Travelers.Where(x => x.BirthDate > eighteenYearsAgo).ToList();
+        }
     }
 }

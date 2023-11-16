@@ -81,7 +81,6 @@ namespace Laldy_MaquihaCostes_RossignolTravelAgency.Business.Service
         {
             List<DestinationDto> destinationDtos = destinations.Select(x => ModelToDto(x)).ToList();
             return destinationDtos;
-
         }
         public List<DestinationDto> GetAll()
         {

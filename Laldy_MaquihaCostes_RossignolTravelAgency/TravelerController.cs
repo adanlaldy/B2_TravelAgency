@@ -93,5 +93,17 @@ namespace Laldy_MaquihaCostes_RossignolTravelAgency
                 return this.StatusCode(500, "Internal server error");
             }
         }
+        [HttpGet("minor")] //GET : api/traveler/minor
+        public ActionResult<List<TravelerDto>> GetMinorTraveler()
+        {
+            try
+            {
+                return this.service.GetMinorTraveler();
+            }
+            catch (Exception e)
+            {
+                return this.StatusCode(500, "Internal Server error");
+            }
+        }
     }
 }
