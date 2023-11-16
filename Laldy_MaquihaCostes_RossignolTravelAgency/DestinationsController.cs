@@ -6,17 +6,27 @@ namespace Laldy_MaquihaCostes_RossignolTravelAgency
 {
     [Route("api/[Controller]")]
     [ApiController]
+    /// <summary>
+    /// Controller for handling destination-related requests.
+    /// </summary>
     public class DestinationsController : ControllerBase
     {
         private readonly IDestinationService service;
 
+        /// <summary>
+        /// Initializes a new instance of the <see cref="DestinationsController"/> class.
+        /// </summary>
+        /// <param name="service">The destination service to be used.</param>
         public DestinationsController(IDestinationService service)
         {
             this.service = service;
         }
 
-        //methodes
-
+        /// <summary>
+        /// Adds a new destination.
+        /// </summary>
+        /// <param name="dto">The destination DTO to add.</param>
+        /// <returns>The created destination DTO.</returns>
         [HttpPost] //POST : api/destination
         public async Task<ActionResult<DestinationDto>> Add([FromBody] DestinationDto dto)
         {
@@ -35,6 +45,11 @@ namespace Laldy_MaquihaCostes_RossignolTravelAgency
             }
         }
 
+        /// <summary>
+        /// Retrieves a destination by its identifier.
+        /// </summary>
+        /// <param name="id">The identifier of the destination to retrieve.</param>
+        /// <returns>The requested destination DTO.</returns>
         [HttpGet("{id}")] //GET : api/destination/2
         public async Task<ActionResult<DestinationDto>> Get(int id)
         {
@@ -52,6 +67,11 @@ namespace Laldy_MaquihaCostes_RossignolTravelAgency
                 return this.StatusCode(500, "Internal Server error");
             }
         }
+
+        /// <summary>
+        /// Retrieves all destinations.
+        /// </summary>
+        /// <returns>A list of all destination DTOs.</returns>
         [HttpGet("all")] //GET : api/destination/all
         public ActionResult<List<DestinationDto>> GetAll()
         {
@@ -65,6 +85,12 @@ namespace Laldy_MaquihaCostes_RossignolTravelAgency
             }
         }
 
+        /// <summary>
+        /// Updates an existing destination.
+        /// </summary>
+        /// <param name="id">The identifier of the destination to update.</param>
+        /// <param name="dto">The destination DTO with updated information.</param>
+        /// <returns>The updated destination DTO.</returns>
         [HttpPut("{id}")] //PUT : api/destination
         public async Task<ActionResult<DestinationDto>> Update(int id, DestinationDto dto)
         {
@@ -87,6 +113,11 @@ namespace Laldy_MaquihaCostes_RossignolTravelAgency
             }
         }
 
+        /// <summary>
+        /// Deletes a destination by its identifier.
+        /// </summary>
+        /// <param name="id">The identifier of the destination to delete.</param>
+        /// <returns>An ActionResult indicating the result of the operation.</returns>
         [HttpDelete("{id}")] //DELETE : api/destination
         public async Task<ActionResult<DestinationDto>> Delete(int id)
         {
@@ -105,6 +136,11 @@ namespace Laldy_MaquihaCostes_RossignolTravelAgency
                 return this.StatusCode(500, "Internal server error");
             }
         }
+
+        /// <summary>
+        /// Retrieves all visited destinations.
+        /// </summary>
+        /// <returns>A list of destination DTOs for all visited destinations.</returns>
         [HttpGet("visited")] //GET : api/destination/visited
         public ActionResult<List<DestinationDto>> GetAllVisited()
         {

@@ -6,17 +6,27 @@ namespace Laldy_MaquihaCostes_RossignolTravelAgency
 {
     [Route("api/[Controller]")]
     [ApiController]
+    /// <summary>
+    /// Controller for handling country-related requests.
+    /// </summary>
     public class CountriesController : ControllerBase
     {
         private readonly ICountryService service;
 
+        /// <summary>
+        /// Initializes a new instance of the <see cref="CountriesController"/> class.
+        /// </summary>
+        /// <param name="service">The country service to be used.</param>
         public CountriesController(ICountryService service)
         {
             this.service = service;
         }
 
-        //methodes
-
+        /// <summary>
+        /// Adds a new country.
+        /// </summary>
+        /// <param name="dto">The country DTO to add.</param>
+        /// <returns>The created country DTO.</returns>
         [HttpPost] //POST : api/country
         public async Task<ActionResult<CountryDto>> Add([FromBody] CountryDto dto)
         {
@@ -35,7 +45,12 @@ namespace Laldy_MaquihaCostes_RossignolTravelAgency
             }
         }
 
-        [HttpGet("{id}")] //GET : api/ountryDto/2
+        /// <summary>
+        /// Retrieves a country by its identifier.
+        /// </summary>
+        /// <param name="id">The identifier of the country to retrieve.</param>
+        /// <returns>The requested country DTO.</returns>
+        [HttpGet("{id}")] //GET : api/country/2
         public async Task<ActionResult<CountryDto>> Get(int id)
         {
             if (id <= default(int))
@@ -53,6 +68,12 @@ namespace Laldy_MaquihaCostes_RossignolTravelAgency
             }
         }
 
+        /// <summary>
+        /// Updates an existing country.
+        /// </summary>
+        /// <param name="id">The identifier of the country to update.</param>
+        /// <param name="dto">The country DTO with updated information.</param>
+        /// <returns>The updated country DTO.</returns>
         [HttpPut("{id}")] //PUT : api/country
         public async Task<ActionResult<CountryDto>> Update(int id, CountryDto dto)
         {
@@ -75,6 +96,11 @@ namespace Laldy_MaquihaCostes_RossignolTravelAgency
             }
         }
 
+        /// <summary>
+        /// Deletes a country by its identifier.
+        /// </summary>
+        /// <param name="id">The identifier of the country to delete.</param>
+        /// <returns>An ActionResult indicating the result of the operation.</returns>
         [HttpDelete("{id}")] //DELETE : api/country
         public async Task<ActionResult<CountryDto>> Delete(int id)
         {
