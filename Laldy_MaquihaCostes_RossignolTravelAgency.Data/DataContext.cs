@@ -13,6 +13,10 @@ namespace Laldy_MaquihaCostes_RossignolTravelAgency.Data
         public DataContext(DbContextOptions<DataContext> options) : base(options) { }
 
         public DbSet<Destination> Destinations { get; set; }
+        public DbSet<Country> Countries { get; set; }
+        public DbSet<DestinationEvent> DestinationEvents { get; set; }
+        public DbSet<Travel> Travels { get; set; }
+        public DbSet<Traveler> Travelers { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {

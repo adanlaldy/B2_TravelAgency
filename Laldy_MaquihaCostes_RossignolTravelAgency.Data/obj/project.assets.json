@@ -3059,11 +3059,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\fanny\\C#\\Laldy_MaquihaCostes_RossignolTravelAgency.Data\\Laldy_MaquihaCostes_RossignolTravelAgency.Data.csproj",
+      "projectUniqueName": "C:\\Users\\fanny\\Desktop\\Ynov 23-24\\C#\\Exos\\B2_TravelAgency\\Laldy_MaquihaCostes_RossignolTravelAgency.Data\\Laldy_MaquihaCostes_RossignolTravelAgency.Data.csproj",
       "projectName": "Laldy_MaquihaCostes_RossignolTravelAgency.Data",
-      "projectPath": "C:\\Users\\fanny\\C#\\Laldy_MaquihaCostes_RossignolTravelAgency.Data\\Laldy_MaquihaCostes_RossignolTravelAgency.Data.csproj",
+      "projectPath": "C:\\Users\\fanny\\Desktop\\Ynov 23-24\\C#\\Exos\\B2_TravelAgency\\Laldy_MaquihaCostes_RossignolTravelAgency.Data\\Laldy_MaquihaCostes_RossignolTravelAgency.Data.csproj",
       "packagesPath": "C:\\Users\\fanny\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\fanny\\C#\\Laldy_MaquihaCostes_RossignolTravelAgency.Data\\obj\\",
+      "outputPath": "C:\\Users\\fanny\\Desktop\\Ynov 23-24\\C#\\Exos\\B2_TravelAgency\\Laldy_MaquihaCostes_RossignolTravelAgency.Data\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\fanny\\AppData\\Roaming\\NuGet\\NuGet.Config",

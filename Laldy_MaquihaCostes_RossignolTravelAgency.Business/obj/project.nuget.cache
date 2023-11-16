@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "cC1XAqiaRX8wu0D9DTn1GlG+OrsXC7FWCI2XgSlIIWuwOpzDJ/mh0I5bknFHnTDcI13RxGE9ewPbMHCtSeUULQ==",
+  "dgSpecHash": "c2Cz+e+Jcd5czkLVFCicecWnKP6JugAsl5e/aCRE+JHZuwFfXVTBZTbxX5Z67utGVf2PWDTMFvohP4p60orPog==",
   "success": true,
-  "projectFilePath": "C:\\Users\\fanny\\C#\\Laldy_MaquihaCostes_RossignolTravelAgency.Business\\Laldy_MaquihaCostes_RossignolTravelAgency.Business.csproj",
+  "projectFilePath": "C:\\Users\\fanny\\Desktop\\Ynov 23-24\\C#\\Exos\\B2_TravelAgency\\Laldy_MaquihaCostes_RossignolTravelAgency.Business\\Laldy_MaquihaCostes_RossignolTravelAgency.Business.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\fanny\\.nuget\\packages\\azure.core\\1.25.0\\azure.core.1.25.0.nupkg.sha512",
     "C:\\Users\\fanny\\.nuget\\packages\\azure.identity\\1.7.0\\azure.identity.1.7.0.nupkg.sha512",

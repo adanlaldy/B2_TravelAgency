@@ -122,3 +122,15 @@ C:\Users\fanny\C#\Laldy_MaquihaCostes_RossignolTravelAgency\bin\Debug\net6.0\New
 C:\Users\fanny\C#\Laldy_MaquihaCostes_RossignolTravelAgency\bin\Debug\net6.0\Newtonsoft.Json.Bson.dll
 C:\Users\fanny\C#\Laldy_MaquihaCostes_RossignolTravelAgency\obj\Debug\net6.0\Laldy_MaquihaCostes_RossignolTravelAgency.RazorAssemblyInfo.cache
 C:\Users\fanny\C#\Laldy_MaquihaCostes_RossignolTravelAgency\obj\Debug\net6.0\Laldy_MaquihaCostes_RossignolTravelAgency.RazorAssemblyInfo.cs
+C:\Users\fanny\Desktop\Ynov 23-24\C#\Exos\B2_TravelAgency\Laldy_MaquihaCostes_RossignolTravelAgency\obj\Debug\net6.0\Laldy_MaquihaCostes_RossignolTravelAgency.csproj.AssemblyReference.cache
+C:\Users\fanny\Desktop\Ynov 23-24\C#\Exos\B2_TravelAgency\Laldy_MaquihaCostes_RossignolTravelAgency\obj\Debug\net6.0\Laldy_MaquihaCostes_RossignolTravelAgency.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\fanny\Desktop\Ynov 23-24\C#\Exos\B2_TravelAgency\Laldy_MaquihaCostes_RossignolTravelAgency\obj\Debug\net6.0\Laldy_MaquihaCostes_RossignolTravelAgency.AssemblyInfoInputs.cache
+C:\Users\fanny\Desktop\Ynov 23-24\C#\Exos\B2_TravelAgency\Laldy_MaquihaCostes_RossignolTravelAgency\obj\Debug\net6.0\Laldy_MaquihaCostes_RossignolTravelAgency.AssemblyInfo.cs
+C:\Users\fanny\Desktop\Ynov 23-24\C#\Exos\B2_TravelAgency\Laldy_MaquihaCostes_RossignolTravelAgency\obj\Debug\net6.0\Laldy_MaquihaCostes_RossignolTravelAgency.csproj.CoreCompileInputs.cache
+C:\Users\fanny\Desktop\Ynov 23-24\C#\Exos\B2_TravelAgency\Laldy_MaquihaCostes_RossignolTravelAgency\obj\Debug\net6.0\Laldy_MaquihaCostes_RossignolTravelAgency.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\fanny\Desktop\Ynov 23-24\C#\Exos\B2_TravelAgency\Laldy_MaquihaCostes_RossignolTravelAgency\obj\Debug\net6.0\Laldy_MaquihaCostes_RossignolTravelAgency.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\fanny\Desktop\Ynov 23-24\C#\Exos\B2_TravelAgency\Laldy_MaquihaCostes_RossignolTravelAgency\obj\Debug\net6.0\Laldy_MaquihaCostes_RossignolTravelAgency.RazorAssemblyInfo.cache
+C:\Users\fanny\Desktop\Ynov 23-24\C#\Exos\B2_TravelAgency\Laldy_MaquihaCostes_RossignolTravelAgency\obj\Debug\net6.0\Laldy_MaquihaCostes_RossignolTravelAgency.RazorAssemblyInfo.cs
+C:\Users\fanny\Desktop\Ynov 23-24\C#\Exos\B2_TravelAgency\Laldy_MaquihaCostes_RossignolTravelAgency\obj\Debug\net6.0\Laldy_MaquihaCostes_RossignolTravelAgency.dll
+C:\Users\fanny\Desktop\Ynov 23-24\C#\Exos\B2_TravelAgency\Laldy_MaquihaCostes_RossignolTravelAgency\obj\Debug\net6.0\refint\Laldy_MaquihaCostes_RossignolTravelAgency.dll
+C:\Users\fanny\Desktop\Ynov 23-24\C#\Exos\B2_TravelAgency\Laldy_MaquihaCostes_RossignolTravelAgency\obj\Debug\net6.0\Laldy_MaquihaCostes_RossignolTravelAgency.pdb

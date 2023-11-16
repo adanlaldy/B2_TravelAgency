@@ -13,3 +13,11 @@ C:\Users\fanny\C#\Laldy_MaquihaCostes_RossignolTravelAgency.Business\obj\Debug\n
 C:\Users\fanny\C#\Laldy_MaquihaCostes_RossignolTravelAgency.Business\obj\Debug\net6.0\refint\Laldy_MaquihaCostes_RossignolTravelAgency.Business.dll
 C:\Users\fanny\C#\Laldy_MaquihaCostes_RossignolTravelAgency.Business\obj\Debug\net6.0\Laldy_MaquihaCostes_RossignolTravelAgency.Business.pdb
 C:\Users\fanny\C#\Laldy_MaquihaCostes_RossignolTravelAgency.Business\obj\Debug\net6.0\ref\Laldy_MaquihaCostes_RossignolTravelAgency.Business.dll
+C:\Users\fanny\Desktop\Ynov 23-24\C#\Exos\B2_TravelAgency\Laldy_MaquihaCostes_RossignolTravelAgency.Business\obj\Debug\net6.0\Laldy_MaquihaCostes_RossignolTravelAgency.Business.csproj.AssemblyReference.cache
+C:\Users\fanny\Desktop\Ynov 23-24\C#\Exos\B2_TravelAgency\Laldy_MaquihaCostes_RossignolTravelAgency.Business\obj\Debug\net6.0\Laldy_MaquihaCostes_RossignolTravelAgency.Business.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\fanny\Desktop\Ynov 23-24\C#\Exos\B2_TravelAgency\Laldy_MaquihaCostes_RossignolTravelAgency.Business\obj\Debug\net6.0\Laldy_MaquihaCostes_RossignolTravelAgency.Business.AssemblyInfoInputs.cache
+C:\Users\fanny\Desktop\Ynov 23-24\C#\Exos\B2_TravelAgency\Laldy_MaquihaCostes_RossignolTravelAgency.Business\obj\Debug\net6.0\Laldy_MaquihaCostes_RossignolTravelAgency.Business.AssemblyInfo.cs
+C:\Users\fanny\Desktop\Ynov 23-24\C#\Exos\B2_TravelAgency\Laldy_MaquihaCostes_RossignolTravelAgency.Business\obj\Debug\net6.0\Laldy_MaquihaCostes_RossignolTravelAgency.Business.csproj.CoreCompileInputs.cache
+C:\Users\fanny\Desktop\Ynov 23-24\C#\Exos\B2_TravelAgency\Laldy_MaquihaCostes_RossignolTravelAgency.Business\obj\Debug\net6.0\Laldy_MaquihaCostes_RossignolTravelAgency.Business.dll
+C:\Users\fanny\Desktop\Ynov 23-24\C#\Exos\B2_TravelAgency\Laldy_MaquihaCostes_RossignolTravelAgency.Business\obj\Debug\net6.0\refint\Laldy_MaquihaCostes_RossignolTravelAgency.Business.dll
+C:\Users\fanny\Desktop\Ynov 23-24\C#\Exos\B2_TravelAgency\Laldy_MaquihaCostes_RossignolTravelAgency.Business\obj\Debug\net6.0\Laldy_MaquihaCostes_RossignolTravelAgency.Business.pdb

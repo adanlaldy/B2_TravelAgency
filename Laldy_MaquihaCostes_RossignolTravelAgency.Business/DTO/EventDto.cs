@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Laldy_MaquihaCostes_RossignolTravelAgency.Business.DTO
 {
-    internal class EventDto
+    public class EventDto
     {
         public int Id { get; set; }
         public string Title { get; set; }

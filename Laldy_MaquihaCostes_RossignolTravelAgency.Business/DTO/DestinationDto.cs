@@ -1,8 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Laldy_MaquihaCostes_RossignolTravelAgency.Data.Models;
+using System;
 
 namespace Laldy_MaquihaCostes_RossignolTravelAgency.Business.DTO
 {
@@ -17,5 +14,7 @@ namespace Laldy_MaquihaCostes_RossignolTravelAgency.Business.DTO
         public DateTime VisiteDate { get; set; }
         public int? Rate { get; set; }
         public string Comment { get; set; }
+        public List<DestinationEvent> DestinationEvents { get; set; }
+        public List<Traveler> Travelers { get; set; }
     }
 }

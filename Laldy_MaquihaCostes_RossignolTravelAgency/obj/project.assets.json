@@ -8625,11 +8625,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\fanny\\C#\\Laldy_MaquihaCostes_RossignolTravelAgency\\Laldy_MaquihaCostes_RossignolTravelAgency.csproj",
+      "projectUniqueName": "C:\\Users\\fanny\\Desktop\\Ynov 23-24\\C#\\Exos\\B2_TravelAgency\\Laldy_MaquihaCostes_RossignolTravelAgency\\Laldy_MaquihaCostes_RossignolTravelAgency.csproj",
       "projectName": "Laldy_MaquihaCostes_RossignolTravelAgency",
-      "projectPath": "C:\\Users\\fanny\\C#\\Laldy_MaquihaCostes_RossignolTravelAgency\\Laldy_MaquihaCostes_RossignolTravelAgency.csproj",
+      "projectPath": "C:\\Users\\fanny\\Desktop\\Ynov 23-24\\C#\\Exos\\B2_TravelAgency\\Laldy_MaquihaCostes_RossignolTravelAgency\\Laldy_MaquihaCostes_RossignolTravelAgency.csproj",
       "packagesPath": "C:\\Users\\fanny\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\fanny\\C#\\Laldy_MaquihaCostes_RossignolTravelAgency\\obj\\",
+      "outputPath": "C:\\Users\\fanny\\Desktop\\Ynov 23-24\\C#\\Exos\\B2_TravelAgency\\Laldy_MaquihaCostes_RossignolTravelAgency\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\fanny\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -8646,8 +8646,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\fanny\\C#\\Laldy_MaquihaCostes_RossignolTravelAgency.Business\\Laldy_MaquihaCostes_RossignolTravelAgency.Business.csproj": {
-              "projectPath": "C:\\Users\\fanny\\C#\\Laldy_MaquihaCostes_RossignolTravelAgency.Business\\Laldy_MaquihaCostes_RossignolTravelAgency.Business.csproj"
+            "C:\\Users\\fanny\\Desktop\\Ynov 23-24\\C#\\Exos\\B2_TravelAgency\\Laldy_MaquihaCostes_RossignolTravelAgency.Business\\Laldy_MaquihaCostes_RossignolTravelAgency.Business.csproj": {
+              "projectPath": "C:\\Users\\fanny\\Desktop\\Ynov 23-24\\C#\\Exos\\B2_TravelAgency\\Laldy_MaquihaCostes_RossignolTravelAgency.Business\\Laldy_MaquihaCostes_RossignolTravelAgency.Business.csproj"
             }
           }
         }

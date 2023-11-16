@@ -1,5 +1,4 @@
-﻿using Laldy_MaquihaCostes_RossignolTravelAgency.Data;
-using Laldy_MaquihaCostes_RossignolTravelAgency.Data.Models;
+﻿using Laldy_MaquihaCostes_RossignolTravelAgency.Data.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
