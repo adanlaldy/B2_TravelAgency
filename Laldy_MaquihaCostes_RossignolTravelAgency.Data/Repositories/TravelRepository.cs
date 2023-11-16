@@ -42,5 +42,10 @@ namespace Laldy_MaquihaCostes_RossignolTravelAgency.Data.Repositories
             DateTime currentDate = DateTime.Now;
             return context.Travels.Where(x => x.StartDate > currentDate).ToList();
         }
+        public List<Travel> GetPastTravel()
+        {
+            DateTime currentDate = DateTime.Now;
+            return context.Travels.Where(x => x.EndDate < currentDate).ToList();
+        }
     }
 }

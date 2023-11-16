@@ -9,5 +9,7 @@ namespace Laldy_MaquihaCostes_RossignolTravelAgency.Business.Service
         Task<TravelDto> Get(int id);
         Task<TravelDto> Update(TravelDto travelDto);
         List<TravelDto> GetFutureTravel();
+        List<TravelDto> GetPastTravel();
+
     }
 }
