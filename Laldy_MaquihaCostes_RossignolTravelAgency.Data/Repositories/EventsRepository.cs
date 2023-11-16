@@ -1,4 +1,6 @@
-﻿using Laldy_MaquihaCostes_RossignolTravelAgency.Data.Models;
+﻿using Laldy_MaquihaCostes_RossignolTravelAgency.Data.Migrations;
+using Laldy_MaquihaCostes_RossignolTravelAgency.Data.Models;
+using Microsoft.EntityFrameworkCore;
 
 namespace Laldy_MaquihaCostes_RossignolTravelAgency.Data.Repositories
 {
@@ -36,6 +38,10 @@ namespace Laldy_MaquihaCostes_RossignolTravelAgency.Data.Repositories
         public async Task<Events> Get(int id)
         {
             return await context.AllEvents.FindAsync(id);
+        }
+        public async Task<List<Events>> GetEventsByDestination(int destinationID)
+        {
+            return context.AllEvents.Where(x => x.DestinationID == destinationID).ToList();
         }
     }
 }

@@ -74,7 +74,6 @@ namespace Laldy_MaquihaCostes_RossignolTravelAgency.Business.Service
         {
             List<TravelerDto> travelerDtos = travelers.Select(x => ModelToDto(x)).ToList();
             return travelerDtos;
-
         }
         public List<TravelerDto> GetMinorTraveler()
         {
@@ -82,6 +81,5 @@ namespace Laldy_MaquihaCostes_RossignolTravelAgency.Business.Service
             List<TravelerDto> travelerDtos = ListModelToDto(travelers);
             return travelerDtos;
         }
-
     }
 }

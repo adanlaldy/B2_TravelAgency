@@ -42,7 +42,6 @@ namespace Laldy_MaquihaCostes_RossignolTravelAgency.Business.Service
         }
 
         //methodes
-
         public async Task<EventsDto> Add(EventsDto eventsDto)
         {
             Events events = DtoToModel(eventsDto);
@@ -71,6 +70,18 @@ namespace Laldy_MaquihaCostes_RossignolTravelAgency.Business.Service
         public async Task<int> Delete(int id)
         {
             return await repository.Delete(id);
+        }
+        private List<EventsDto> ListModelToDto(ICollection<Events> events)
+        {
+            List<EventsDto> eventsDto = events.Select(x => ModelToDto(x)).ToList();
+            return eventsDto;
+
+        }
+        public async Task<List<EventsDto>> GetEventsByDestination(int destinationID)
+        {
+            List<Events> events = await repository.GetEventsByDestination(destinationID);
+            List<EventsDto> eventsDto = ListModelToDto(events);
+            return eventsDto;
         }
     }
 }

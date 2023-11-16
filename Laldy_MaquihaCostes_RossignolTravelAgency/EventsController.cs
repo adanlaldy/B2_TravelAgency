@@ -94,5 +94,23 @@ namespace Laldy_MaquihaCostes_RossignolTravelAgency
                 return this.StatusCode(500, "Internal server error");
             }
         }
+        [HttpGet("eventsbydestination/{destinationID}")] //GET : api/eventsbydestination/1
+        public async Task<ActionResult<List<EventsDto>>> GetEventsByDestination(int destinationID)
+        {
+            if (destinationID <= default(int))
+            {
+                return NotFound();
+            }
+
+            try
+            {
+                var eventsDto = await this.service.GetEventsByDestination(destinationID);
+                return Ok(eventsDto);
+            }
+            catch (Exception e)
+            {
+                return this.StatusCode(500, "Internal Server error");
+            }
+        }
     }
 }

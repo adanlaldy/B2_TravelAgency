@@ -10,6 +10,5 @@ namespace Laldy_MaquihaCostes_RossignolTravelAgency.Business.Service
         List<DestinationDto> GetAll();
         Task<DestinationDto> Update(DestinationDto destinationDto);
         List<DestinationDto> GetAllVisited();
-
     }
 }
