@@ -15,6 +15,18 @@ builder.Services.AddDbContext<DataContext>();
 builder.Services.AddTransient<IDestinationRepository, DestinationRepository>();
 builder.Services.AddTransient<IDestinationService, DestinationService>();
 
+builder.Services.AddTransient<ICountryRepository, CountryRepository>();
+builder.Services.AddTransient<ICountryService, CountryService>();
+
+builder.Services.AddTransient<IEventRepository, EventRepository>();
+builder.Services.AddTransient<IEventService, EventService>();
+
+builder.Services.AddTransient<ITravelerRepository, TravelerRepository>();
+builder.Services.AddTransient<ITravelerService, TravelerService>();
+
+builder.Services.AddTransient<ITravelRepository, TravelRepository>();
+builder.Services.AddTransient<ITravelService, TravelService>();
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.

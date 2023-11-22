@@ -6,9 +6,9 @@ namespace Laldy_MaquihaCostes_RossignolTravelAgency.Business.Service
 {
     public class TravelerService : ITravelerService
     {
-        private readonly ITravelerRepository repository;
+        private readonly ITravelerService repository;
 
-        public TravelerService(ITravelerRepository repository)
+        public TravelerService(ITravelerService repository)
         {
             this.repository = repository;
         }
